@@ -27,14 +27,15 @@ nav {
 
 /* Logo */
 .logo {
-	margin-top: 25px;
+	margin-top: 15px;
 	display: flex;
-    background-image: url("/img/logo_nav.png");
+    background-image: url("img/logo_nav.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 	cursor: pointer;
+	transition: 0.8s;
 }
 
 /* Header */
@@ -46,8 +47,8 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	transition: 0.7s;
-	padding: 30px 20px;
+	transition: 0.8s;
+	padding: 20px 20px;
 	z-index: 1000;
 }
 
@@ -61,8 +62,18 @@ header {
 /* Header al hacer scroll */
 header.abajo {
 	background: #fff;
-	padding: 15px 20px;
+	padding: 10px 20px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header.abajo .logo {
+	width: 70px;
+	height: 70px;
+	margin-top: 0;
+}
+
+header.abajo .logo-menu {
+	margin-top: -30px;
 }
 
 /* Logo derecha */
@@ -70,7 +81,7 @@ header.abajo {
     display: flex;
     align-items: end;
     justify-content: flex-end;
-	margin-top: -60px;
+	margin-top: -50px;
 }
 
 /* Header derecha */

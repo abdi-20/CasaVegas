@@ -1,0 +1,224 @@
+/* Estilos generales */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Estilos para el carrusel de imágenes */
+.SliderCarrusel {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px;
+    overflow: hidden;
+}
+
+.SliderCarrusel ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 25s infinite alternate ease-in-out;
+}
+
+.SliderCarrusel li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+/* Termina estilos para el texto sobre el carrusel */
+/* Estilos para el texto sobre el carrusel */
+.texto h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+    font-family: 'parisienne', cursive;
+    line-height: 1.2;
+}
+
+.texto {
+    position: absolute;
+    font-style: italic;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+}
+
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* Termina estilos para el texto sobre el carrusel */
+/* Estilos para las imágenes del carrusel */
+.SliderCarrusel img {
+    width: 100%;
+    display: block;
+}
+/* Termina estilos para las imágenes del carrusel */
+
+/* Estilos para la sección de servicios */
+ .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #f8f8f8;
+            padding: 40px 30px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+        }
+
+        .icon-container i {
+            font-size: 48px;
+            color: #894590;
+        }
+
+        .service-title {
+            color: #894590;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .service-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #894590;
+        }
+
+        .service-description {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        /* Efectos hover al pasar cursor*/
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+        }      
+
+        /*.service-card:hover i {
+            color: #ffd700;
+        }
+
+        .service-card:hover .service-title {
+            color: #ffd700;
+        }
+
+        .service-card:hover .service-title::after {
+            background-color: #ffd700;
+        }*/
+
+/* Animación para el carrusel */
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    16% {margin-left: 0;}
+
+    20% {margin-left: -100%;}
+    36% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    56% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    76% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+}
+
+/* RESPONSIVE - Tablets */
+@media (max-width: 1024px) {
+    .texto {
+        padding: 15px;
+        width: 85%;
+    }
+
+    .texto h2 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
+}
+
+/* RESPONSIVE - Móviles grandes */
+@media (max-width: 768px) {
+    .texto {
+        padding: 15px 10px;
+        width: 90%;
+        border-radius: 8px;
+    }
+
+    .texto h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .texto p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* RESPONSIVE - Móviles pequeños */
+@media (max-width: 480px) {
+    .texto {
+        padding: 12px 8px;
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .texto h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .texto p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+/* RESPONSIVE - Móviles muy pequeños */
+@media (max-width: 360px) {
+    .texto {
+        padding: 10px 6px;
+        width: 95%;
+    }
+
+    .texto h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .texto p {
+        font-size: 11px;
+    }
+}
+/* Termina estilos para las imágenes del carrusel */

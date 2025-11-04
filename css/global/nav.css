@@ -35,7 +35,7 @@ nav {
     width: 100px;
     height: 100px;
 	cursor: pointer;
-	transition: 0.8s;
+	transition: 0.7s;
 }
 
 /* Header */
@@ -47,7 +47,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	transition: 0.8s;
+	transition: 0.7s;
 	padding: 20px 20px;
 	z-index: 1000;
 }
@@ -62,18 +62,8 @@ header {
 /* Header al hacer scroll */
 header.abajo {
 	background: #fff;
-	padding: 10px 20px;
+	padding: 10px 20px; /* <-- CAMBIADO (antes 15px 20px) */
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-header.abajo .logo {
-	width: 70px;
-	height: 70px;
-	margin-top: 0;
-}
-
-header.abajo .logo-menu {
-	margin-top: -30px;
 }
 
 /* Logo derecha */
@@ -81,7 +71,7 @@ header.abajo .logo-menu {
     display: flex;
     align-items: end;
     justify-content: flex-end;
-	margin-top: -50px;
+	margin-top: -50px; /* <-- CAMBIADO (antes -60px) */
 }
 
 /* Header derecha */
@@ -189,4 +179,16 @@ header.abajo ul li ul li a {
 header.abajo ul li ul li a:hover {
 	color: #894590;
 	background: rgba(0, 68, 204, 0.1);
+}
+
+/* Define el nuevo tamaño del logo al hacer scroll */
+header.abajo .logo {
+	width: 70px;
+	height: 70px;
+	margin-top: 0;
+}
+
+/* Re-alinea el menú con el logo encogido */
+header.abajo .logo-menu {
+	margin-top: -30px;
 }

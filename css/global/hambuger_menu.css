@@ -164,6 +164,20 @@
 		transition: max-height 0.3s ease-in;
 	}
 
+	/* Ocultar submenú de Contacto en móvil */
+	header ul li:has(a[href*="contacto"]) ul,
+	header ul li:has(a[href*="contacto.html"]) ul,
+	header ul li.has-submenu.active:has(a[href*="contacto"]) > ul {
+		display: none !important;
+		max-height: 0 !important;
+	}
+
+	/* Ocultar flecha de Contacto en móvil */
+	header ul li:has(a[href*="contacto"]) .arrow,
+	header ul li:has(a[href*="contacto.html"]) .arrow {
+		display: none !important;
+	}
+
 	header ul li ul li {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 	}

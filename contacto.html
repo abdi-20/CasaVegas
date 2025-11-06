@@ -40,6 +40,9 @@
 		<link rel="stylesheet" href="css/global/nav.css">
 		<link rel="stylesheet" href="css/global/hambuger_menu.css">
 		<link rel="stylesheet" href="css/global/footer.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
@@ -119,12 +122,81 @@
 		<!--Contenido del sitio web -->
 		</section>
 		
-		<section>
-			<div class="banner">
-				<h1>Quieres reservar </h1>
-					<p1>Contamos con diferentes medios de comunicación para ti, llamanos.</p1>
-			</div>	
-		</section>
+		<div class="content-wrapper"> 
+
+			<section id="escribenos" class="content-section">
+				<h2>Escríbenos</h2>
+				<p>¿Tienes dudas o solicitudes especiales? Completa el formulario y nuestro equipo te contactará a la brevedad.</p>
+		
+				<form class="contact-form">
+					<div class="form-group">
+						<label for="nombre">Nombre Completo:</label>
+						<input type="text" id="nombre" name="nombre" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Correo Electrónico:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="asunto">Asunto:</label>
+						<input type="text" id="asunto" name="asunto">
+					</div>
+					<div class="form-group">
+						<label for="mensaje">Mensaje:</label>
+						<textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+					</div>
+					<button type="submit" class="btn-submit">Enviar Mensaje</button>
+				</form>
+			</section>
+		
+			<section id="telefono" class="content-section">
+				<h2>Vía Telefónica</h2>
+				<p>Prefieres una atención más directa? Llámanos, estamos disponibles 24/7 para atenderte.</p>
+				<div class="contact-info-blocks">
+					<div class="contact-block">
+						<h3>Teléfono de Recepción</h3>
+						<p class="contact-detail">+52 954-107-70-19</p>
+					</div>
+					<div class="contact-block">
+						<h3>Email de Administración</h3>
+						<p class="contact-detail">admonhotelcasavegas@hotmail.com</p>
+					</div>
+				</div>
+			</section>
+		
+			<section id="ubicacion" class="content-section">
+				<h2>Ubicación</h2>
+				<p>Nos encontramos en la entrada de la ciudad, una ubicación ideal para tu comodidad.</p>
+				<div class="map-container">
+					<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.33088656121!2d-98.05814568515678!3d16.3262279886407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c0b11568853b77%3A0xe510c4d3d014c227!2sHotel%20Casavegas!5e0!3m2!1ses-419!2smx!4v1675806655123!5m2!1ses-419!2smx" 
+						width="100%" 
+						height="450" 
+						style="border:0;" 
+						allowfullscreen="" 
+						loading="lazy" 
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+			</section>
+
+			<section id="redes" class="content-section">
+				<h2>Redes Sociales</h2>
+				<p>Síguenos para enterarte de nuestras últimas promociones y eventos especiales.</p>
+				<div class="social-links-contact">
+					<a href="https://facebook.com" class="social-link facebook" aria-label="Facebook" title="Facebook">
+						<img src="img/redesSociales/facebook.png" alt="facebook" width="40px">
+					</a>
+					<a href="https://instagram.com" class="social-link instagram" aria-label="Instagram" title="Instagram">
+						<img src="img/redesSociales/instagram.png" alt="instagram" width="40px">
+					</a>
+					<a href="https://www.whatsapp.com" class="social-link whatsapp" aria-label="WhatsApp" title="WhatsApp">
+						<img src="img/redesSociales/whatsApp.png" alt="whatsApp" width="40px">
+					</a>
+				</div>
+			</section>
+		
+		</div> ```
 
 		<!-- Footer -->
 		<footer class="footer">

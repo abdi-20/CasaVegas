@@ -30,7 +30,7 @@
 }
 
 .footer-column h3 {
-	color: #ffd700;
+	color: var(--accent);
 	font-size: 20px;
 	margin-bottom: 20px;
 	font-weight: 600;
@@ -39,7 +39,7 @@
 }
 
 .footer-column h4 {
-	color: #ffd700;
+	color: var(--accent);
 	font-size: 16px;
 	margin-bottom: 10px;
 }
@@ -70,7 +70,7 @@
 }
 
 .footer-column ul li a:hover {
-	color: #ffd700;
+	color: var(--accent);
 	padding-left: 5px;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .contact-info li strong {
-	color: #ffd700;
+	color: var(--accent);
 	display: block;
 	margin-bottom: 5px;
 }
@@ -92,7 +92,7 @@
 .footer-logo {
 	width: 180px;
 	height: 188px;
-	background: url(/img/logo_nav.png);
+	background: url(../../img/logo_nav.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;

@@ -1,3 +1,13 @@
+/* Paleta global basada en el logo */
+:root {
+	--primary: #894590; /* morado del logo, intensidad media */
+	--accent: #ffd700;  /* dorado de acento */
+	--text: #333333;
+	--muted-text: #666666;
+	--bg: #ffffff;
+	--nav-bg: rgba(0, 0, 0, 0.85);
+	--nav-bg-scrolled: rgba(255, 255, 255, 0.98);
+}
 /* Navegación */
 nav {
 	display: flex;
@@ -28,7 +38,7 @@ nav {
 .logo {
 	margin-top: 15px;
 	display: flex;
-    background-image: url("img/logo_nav.png");
+    background-image: url("../../img/logo_nav.png"); 
     background-size: contain;
     background-repeat: no-repeat;
     width: 100px;
@@ -108,12 +118,12 @@ header ul li a {
 
 /* subenú de navegación al pasar sobre el curso sin hacer scroll */
 header ul li a:hover {
-	color: #ffd700;
+	color: var(--accent);
 }
 
 /* submenú de navegación al pasar el curso haciendo scroll hacer scroll */
 header.abajo ul li a:hover {
-	color: #894590;
+	color: var(--primary);
 }
 
 /* Menú de navegación al hacer scroll */
@@ -131,12 +141,12 @@ nav ul li ul {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	background: rgba(0, 0, 0, 0.9);
+	background: var(--nav-bg);
 	padding: 10px 0;
 	display: none;
 	flex-direction: column;
 	min-width: 180px;
-	border-top: 3px solid #ffd700;
+	border-top: 3px solid var(--accent);
 	list-style: none;
 	border-radius: 10px;
 }
@@ -165,8 +175,8 @@ header ul li ul li ul {
 }
 
 header.abajo ul li ul {
-	background: rgba(255, 255, 255, 0.98);
-	border-top: 3px solid #894590;
+	background: var(--nav-bg-scrolled);
+	border-top: 3px solid var(--primary);
 	
 }
 

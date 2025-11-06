@@ -6,11 +6,11 @@
 }
 
 /* Zona 1 - Banner principal */
-.Zona1 {
+	.Zona1 {
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background: url(img/imgCuartos/ZONA1.jpg);
+	background: url(../img/imgCuartos/ZONA1.jpg);
 	background-size: cover;
 	background-position: center center;
 }

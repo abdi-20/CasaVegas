@@ -18,8 +18,8 @@
 .content-wrapper {
 	max-width: 1000px;
 	margin: 50px auto;
-	padding: 30px;
-	background-color: #f7f7f7; /* Fondo gris claro */
+	padding: 40px; /* Espacio interno del contenedor gris */
+	background-color: #f7f7f7; /* <-- Fondo gris claro */
 	border-radius: 8px;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
@@ -32,6 +32,7 @@
 	padding: 40px;
 	margin-bottom: 30px;
 	box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+	margin-bottom: 150px;
 }
 .content-section:last-child {
 	margin-bottom: 0;

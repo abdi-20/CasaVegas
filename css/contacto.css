@@ -44,7 +44,7 @@ body{
 .content-section {
 	padding-top: 100px; /* Para el anclaje del header fijo */
 	margin-top: -100px; /* Para el anclaje del header fijo */
-	padding-bottom: 60px; /* Antes: 40px */
+	padding-bottom: 60px;
 	margin-bottom: 90px; /* Nuevo: añade más aire entre secciones */
 	border-bottom: none;
 	scroll-margin-top: 120px;
@@ -201,7 +201,7 @@ body{
 	width: 100%;
 }
 
-/* 🔥 Animación de color en los textos de contacto */
+/* Animación de color en los textos de contacto */
 .contact-detail {
     font-weight: 600;
     letter-spacing: 0.5px;

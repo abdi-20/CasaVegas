@@ -4,63 +4,114 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* Estilos para el carrusel de imágenes */
+
+/* Estilos para el carrusel */
 .SliderCarrusel {
-    width: 100%;
-    height: auto;
-    margin: 0px auto 0px;
-    overflow: hidden;
+	width: 100%;
+	height: 100vh; /* Para que ocupe toda la pantalla */
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* ESTILOS DE TU IMAGEN */
+	background-size: cover; /* 'cover' es mejor que '100% 100%' para que no se estire */
+	background-position: center center;
+
+	/* ANIMACIÓN DE TU IMAGEN (25s total, 5s por imagen) */
+	animation: slider 35s linear infinite;
 }
 
-.SliderCarrusel ul {
-    display: flex;
-    padding: 0;
-    width: 500%;
-    animation: slide 25s infinite alternate ease-in-out;
+/* Overlay oscuro (el que te recomendé antes, se ve genial aquí) */
+.SliderCarrusel::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1; /* Se pone detrás del texto */
 }
 
-.SliderCarrusel li {
-    width: 100%;
-    list-style: none;
-    position: relative;
+/* LA ANIMACIÓN DE TU IMAGEN */
+@keyframes slider {
+	0%   { background-image: url(../img/casavegas-carrucel/Principal.jpg); }
+
+	20%  { background-image: url(../img/casavegas-carrucel/Principal1.jpg); }
+
+	40%  { background-image: url(../img/casavegas-carrucel/Principal2.jpg); }
+
+	60%  { background-image: url(../img/casavegas-carrucel/Principal3.jpg); }
+
+	80%  { background-image: url(../img/casavegas-carrucel/Principal4.jpg); }
+
+	100% { background-image: url(../img/casavegas-carrucel/Principal.jpg); } /* Vuelve a la primera */
 }
-/* Termina estilos para el texto sobre el carrusel */
-/* Estilos para el texto sobre el carrusel */
+
+/* Ajustes para el texto (basado en lo que hicimos antes) */
+.texto {
+	position: relative; /* Cambiado de 'absolute' a 'relative' */
+	z-index: 2; /* Para que esté sobre el overlay */
+	font-style: normal;
+	color: #fff;
+	text-align: center;
+	background: none; /* Sin caja negra */
+	padding: 20px;
+	width: 90%;
+	max-width: 800px;
+}
+
 .texto h2 {
-    font-size: 45px;
-    margin-bottom: 35px;
-    font-family: 'parisienne', cursive;
+	font-size: 48px;
+	margin-bottom: 15px;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.texto p {
+	font-size: 22px;
+	font-family: 'Helvetica', Arial, sans-serif;
+	line-height: 1.6;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.texto h2 {
+    font-size: 50px; /* Tamaño de letra como en tu ejemplo */
+    margin-bottom: 15px;
+    font-family: 'Helvetica', Arial, sans-serif; /* <-- CAMBIO IMPORTANTE */
+    font-weight: 700; /* Texto en negritas */
     line-height: 1.2;
+    font-style: normal; /* Quita la cursiva */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .texto {
     position: absolute;
-    font-style: italic;
+    font-style: normal; /* Quita la cursiva */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: none; /* <-- CAMBIO IMPORTANTE (quita la caja negra) */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0; /* Quita bordes redondeados */
     width: 90%;
     max-width: 800px;
+    z-index: 2; /* Asegura que el texto esté sobre el overlay */
 }
 
 
 .texto p {
-    font-size: 18px;
+    font-size: 22px; /* Texto de párrafo más grande */
+    font-family: 'Helvetica', Arial, sans-serif; /* <-- CAMBIO IMPORTANTE */
     line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra ligera */
 }
 /* Termina estilos para el texto sobre el carrusel */
-/* Estilos para las imágenes del carrusel */
-.SliderCarrusel img {
-    width: 100%;
-    display: block;
-    animation: kenburns 25s infinite alternate ease-in-out;
-}
-/* Termina estilos para las imágenes del carrusel */
 
 /* Estilos para la sección de servicios */
  .container {
@@ -137,19 +188,6 @@
 
 .banner { animation: fadeUp 0.6s ease both; }
 
-        /*.service-card:hover i {
-            color: #ffd700;
-        }
-
-        .service-card:hover .service-title {
-            color: #ffd700;
-        }
-
-        .service-card:hover .service-title::after {
-            background-color: #ffd700;
-        }*/
-
-/* Animación para el carrusel */
 
 /* Animaciones sutiles globales */
 @keyframes fadeUp {

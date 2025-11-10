@@ -201,6 +201,36 @@ body{
 	width: 100%;
 }
 
+/* 🔥 Animación de color en los textos de contacto */
+.contact-detail {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #a0005c, #ffb84d, #ffffff, #a0005c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: colorFlow 5s infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+.contact-detail:hover {
+    transform: scale(1.1);
+}
+
+/*Definición de la animación */
+@keyframes colorFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 .content-section p {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
@@ -362,16 +392,18 @@ body{
 .social-links-contact {
 	display: flex;
 	justify-content: center; /* Centra los iconos */
-	gap: 25px; /* Espacio entre iconos */
+	gap: 50px; /* Espacio entre iconos */
 	padding: 20px 0;
 }
 /* Reutilizamos los estilos del footer.css para los iconos */
 .social-links-contact .social-link img {
-	width: 40px;
-	transition: transform 0.3s;
+	width: 60px;
+	filter: drop-shadow(0 0 6px rgba(255, 184, 77, 0.4)); /* brillo dorado suave */
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
 .social-links-contact .social-link:hover img {
-	transform: scale(1.15) translateY(-5px);
+	transform: scale(1.25) translateY(-5px);
+	filter: drop-shadow(0 0 12px rgba(255, 184, 77, 0.8));
 }
 
 

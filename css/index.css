@@ -37,14 +37,15 @@
 /* LA ANIMACIÓN DE TU IMAGEN */
 @keyframes slider {
 	0%   { background-image: url(../img/casavegas-carrucel/Principal.jpg); }
-	11.1% { background-image: url(../img/casavegas-carrucel/Principal1.jpg); }
-	22.2% { background-image: url(../img/casavegas-carrucel/Principal2.jpg); }
-	33.3% { background-image: url(../img/casavegas-carrucel/Principal3.jpg); }
-	44.4% { background-image: url(../img/casavegas-carrucel/Principal4.jpg); }
-	55.5% { background-image: url(../img/casavegas-carrucel/Principal5.jpg); }
-	66.6% { background-image: url(../img/casavegas-carrucel/Principal6.jpg); }
-	77.7% { background-image: url(../img/casavegas-carrucel/Principal7.jpg); }
-	88.8% { background-image: url(../img/casavegas-carrucel/Principal8.jpg); }
+	10% { background-image: url(../img/casavegas-carrucel/Principal1.jpg); }
+	20% { background-image: url(../img/casavegas-carrucel/Principal2.jpg); }
+	30% { background-image: url(../img/casavegas-carrucel/Principal3.jpg); }
+	40% { background-image: url(../img/casavegas-carrucel/Principal4.jpg); }
+	50% { background-image: url(../img/casavegas-carrucel/Principal5.jpg); }
+	60% { background-image: url(../img/casavegas-carrucel/Principal6.jpg); }
+	70% { background-image: url(../img/casavegas-carrucel/Principal7.jpg); }
+	80% { background-image: url(../img/casavegas-carrucel/Principal8.jpg); }
+    90% { background-image: url(../img/casavegas-carrucel/Principal9.jpg); }
 	100% { background-image: url(../img/casavegas-carrucel/Principal.jpg); } /* Vuelve a la primera */
 }
 

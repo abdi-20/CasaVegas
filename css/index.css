@@ -19,7 +19,7 @@
 	background-position: center center;
 
 	/* ANIMACIÓN DE TU IMAGEN (25s total, 5s por imagen) */
-	animation: slider 35s linear infinite;
+	animation: slider 45s linear infinite;
 }
 
 /* Overlay oscuro (el que te recomendé antes, se ve genial aquí) */
@@ -37,15 +37,14 @@
 /* LA ANIMACIÓN DE TU IMAGEN */
 @keyframes slider {
 	0%   { background-image: url(../img/casavegas-carrucel/Principal.jpg); }
-
-	20%  { background-image: url(../img/casavegas-carrucel/Principal1.jpg); }
-
-	40%  { background-image: url(../img/casavegas-carrucel/Principal2.jpg); }
-
-	60%  { background-image: url(../img/casavegas-carrucel/Principal3.jpg); }
-
-	80%  { background-image: url(../img/casavegas-carrucel/Principal4.jpg); }
-
+	11.1% { background-image: url(../img/casavegas-carrucel/Principal1.jpg); }
+	22.2% { background-image: url(../img/casavegas-carrucel/Principal2.jpg); }
+	33.3% { background-image: url(../img/casavegas-carrucel/Principal3.jpg); }
+	44.4% { background-image: url(../img/casavegas-carrucel/Principal4.jpg); }
+	55.5% { background-image: url(../img/casavegas-carrucel/Principal5.jpg); }
+	66.6% { background-image: url(../img/casavegas-carrucel/Principal6.jpg); }
+	77.7% { background-image: url(../img/casavegas-carrucel/Principal7.jpg); }
+	88.8% { background-image: url(../img/casavegas-carrucel/Principal8.jpg); }
 	100% { background-image: url(../img/casavegas-carrucel/Principal.jpg); } /* Vuelve a la primera */
 }
 

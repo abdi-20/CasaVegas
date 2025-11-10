@@ -44,26 +44,51 @@ body{
 .content-section {
 	padding-top: 100px; /* Para el anclaje del header fijo */
 	margin-top: -100px; /* Para el anclaje del header fijo */
-	padding-bottom: 40px;
-	margin-bottom: 0;
+	padding-bottom: 60px; /* Antes: 40px */
+	margin-bottom: 90px; /* Nuevo: añade más aire entre secciones */
 	border-bottom: none;
 	scroll-margin-top: 120px;
 	display: flex;
 	align-items: center;
-	gap: 40px;
+	gap: 50px; /* Aumenta separación interna entre texto e ícono decorativo */
 	max-width: 100%;
 	position: relative;
 	transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, backdrop-filter 0.4s ease, border 0.4s ease;
-	border-radius: 12px;
-	padding-left: 40px;
-	padding-right: 40px;
-	background-color: rgba(255, 255, 255, 0.15);
-	backdrop-filter: blur(15px);
-	-webkit-backdrop-filter: blur(15px);
+	border-radius: 20px; /* Más suavizado */
+	padding-left: 60px; /* Aumenta margen interno */
+	padding-right: 50px;
+	background-color: rgba(255, 255, 255, 0.18);
+	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
 	border: 1px solid rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 	transform-origin: center center;
 }
+
+/* Mejora estética interna */
+.content-section .section-content h2 {
+	margin-bottom: 25px;
+}
+
+.content-section .section-content p {
+	margin-bottom: 25px;
+}
+
+.content-section .section-content ul {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content-section .contact-info-blocks {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.social-links-contact {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
 .content-section:nth-child(odd) {
 	flex-direction: row;
 	text-align: left;

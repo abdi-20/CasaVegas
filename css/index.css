@@ -198,13 +198,12 @@
 	text-align: left; /* <-- CAMBIO 2: Alineado a la izquierda */
 	padding: 10px 30px; /* <-- CAMBIO 3: Añadido padding izquierdo (para que no pegue al borde) */
 	z-index: 999; /* Justo debajo del header (que tiene z-index: 1000) */
-	transition: top 0.7s; /* Anima el movimiento cuando el header cambia de tamaño */
 	border-bottom: none; /* <-- CAMBIO 4: Se quita el borde inferior */
 }
 
 #clock-display {
 	font-family: 'Helvetica', Arial, sans-serif;
-	font-size: 1.2em; 
+	font-size: 2.2em; 
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 

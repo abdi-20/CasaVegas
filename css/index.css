@@ -188,6 +188,33 @@
 
 .banner { animation: fadeUp 0.6s ease both; }
 
+/* --- Estilos para la Barra de Reloj (MODIFICADO) --- */
+#clock-bar {
+	position: fixed; /* Fijo, como el header */
+	left: 0;
+	width: 100%;
+	background-color: transparent; /* <-- CAMBIO 1: Fondo transparente */
+	color: #fff; /* Texto blanco */
+	text-align: left; /* <-- CAMBIO 2: Alineado a la izquierda */
+	padding: 10px 30px; /* <-- CAMBIO 3: Añadido padding izquierdo (para que no pegue al borde) */
+	z-index: 999; /* Justo debajo del header (que tiene z-index: 1000) */
+	transition: top 0.7s; /* Anima el movimiento cuando el header cambia de tamaño */
+	border-bottom: none; /* <-- CAMBIO 4: Se quita el borde inferior */
+}
+
+#clock-display {
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 1.2em; 
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+	color: var(--primary, #894590);
+}
+
+header.abajo + #clock-bar #clock-display {
+	color: #333; /* Cambia el texto a un color oscuro */
+	text-shadow: none; /* Le quita la sombra que ya no necesita */
+}
 
 /* Animaciones sutiles globales */
 @keyframes fadeUp {

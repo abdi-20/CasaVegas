@@ -1,0 +1,272 @@
+/* Importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Color de fondo rosado claro de la imagen */
+    background-color: #ffebee;
+    background-image: url('Principal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para el logo del formulario */
+.logo-form {
+    max-width: 180px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px; /* Espacio debajo del logo */
+    margin-top: -10px; /* Si quieres subirlo un poco */
+}
+/* El contenedor principal blanco */
+.container {
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+/* Contenedor de AMBOS formularios */
+.container-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; /* Ocupa la mitad izquierda */
+    transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-networks {
+    margin: 15px 0;
+}
+
+.social-networks ion-icon {
+    font-size: 28px;
+    margin: 0 10px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* CAMBIO: Color hover morado */
+.social-networks ion-icon:hover {
+    color: #9c27b0;; 
+}
+
+form span {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* CAMBIO: Fondo de input más claro/gris */
+.container-input {
+    background-color: #f5f5f5; /* Un gris muy claro */
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container-input ion-icon {
+    color: #555;
+    margin-right: 10px;
+}
+
+.container-input input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.container-input input::placeholder {
+    color: #888;
+}
+
+form a {
+    color: #555;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+    transition: color 0.3s;
+}
+
+/* CAMBIO: Color hover morado */
+form a:hover {
+    color: #9c27b0;
+    text-decoration: underline;
+}
+
+/* Estilo de los botones (el verde se mantiene) */
+.button {
+    background-color: #8bc34a; /* Color verde/teal del botón */
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #9ccc65;
+}
+
+/* --- ESTADO INICIAL (Login) --- */
+.sign-in {
+    z-index: 2;
+    opacity: 1;
+}
+.sign-up {
+    z-index: 1;
+    opacity: 0;
+}
+
+/* --- ESTILOS DEL OVERLAY (Panel Morado) --- */
+
+.container-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.7s cubic-bezier(0.39, 0.58, 0.57, 1);
+    z-index: 100;
+    background-color: rgba(156, 39, 176, 0.5); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    border-top-left-radius: 120px 60px;
+    border-bottom-left-radius: 120px 60px;
+}
+
+.overlay-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    text-align: center;
+    transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.overlay-panel h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.overlay-panel p {
+    font-size: 14px;
+    margin: 20px 0 30px;
+}
+
+/* Botón "ghost" del overlay */
+.overlay-panel .button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+.overlay-panel .button:hover {
+    background-color: #ffffff;
+    color: #9c27b0; 
+}
+
+/* ESTADO INICIAL del Overlay */
+#overlay-left { /* Panel ¡Hola! */
+    transform: translateX(-100%);
+    opacity: 0;
+}
+#overlay-right { /* Panel ¡Bienvenido! */
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* ==================================================
+   ESTADO ACTIVO (Tu nueva imagen de Registrarse)
+==================================================
+*/
+
+/* 1. Mueve el overlay de derecha a izquierda */
+.container.active .container-overlay {
+    transform: translateX(-100%);
+    
+    /* Invierte la curva (como se ve en tu imagen) */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 120px 60px;
+    border-bottom-right-radius: 120px 60px;
+}
+
+/* 2. Oculta el formulario de Iniciar Sesión */
+.container.active .sign-in {
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 1;
+}
+
+/* 3. Muestra el formulario de Registrarse */
+.container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* 4. Muestra el panel "¡Hola!" (el morado de la izquierda) */
+.container.active #overlay-left {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* 5. Oculta el panel "¡Bienvenido!" */
+.container.active #overlay-right {
+    transform: translateX(100%);
+    opacity: 0;
+}

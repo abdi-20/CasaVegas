@@ -223,3 +223,26 @@ header.abajo .logo {
 header.abajo .logo-menu {
 	margin-top: -30px;
 }
+
+/* --- Estilos para el Reloj en la barra superior (Centrado) --- */
+#clock-container {
+    text-align: center;
+}
+
+/* Estilo del reloj para que resalte */
+#clock-display {
+    font-weight: bold;
+    font-size: 1.1em; /* <-- Un poco más grande para resaltar */
+
+    /* Color dorado (accent) cuando el fondo es transparente */
+    color: var(--accent, #ffd700); 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra para legibilidad */
+    transition: 0.7s;
+}
+
+/* Cuando el header es blanco (scroll) */
+header.abajo #clock-display {
+    /* Cambia a color morado (primary) */
+    color: var(--primary, #894590); 
+    text-shadow: none; /* Sin sombra sobre fondo blanco */
+}

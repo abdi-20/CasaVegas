@@ -206,3 +206,33 @@
 		width: 100%;
 	}
 }
+
+/* --- Estilo del Botón de Login (Móvil) --- */
+@media (max-width: 1300px) {
+
+	/* Quita la línea de borde del <li> del botón */
+	.nav-login-btn-container {
+		border-bottom: none !important; 
+		padding: 15px 10px; /* Añade espacio al <li> */
+	}
+
+	/* Hace que el botón NO ocupe todo el ancho */
+	header ul li a.btn-login {
+		display: inline-block; 
+		width: auto;
+		margin: 0;
+		padding: 8px 18px; /* Restablece el padding del botón */
+	}
+
+	/* Estilos en menú móvil (fondo oscuro) */
+	.logo-menu a.btn-login {
+		background-color: var(--accent, #ffd700);
+		color: #333;
+	}
+
+	/* Estilos en menú móvil (fondo blanco) */
+	header.abajo .logo-menu a.btn-login {
+		background-color: var(--primary, #894590);
+		color: #fff;
+	}
+}

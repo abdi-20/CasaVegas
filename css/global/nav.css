@@ -246,3 +246,39 @@ header.abajo #clock-display {
     color: var(--primary, #894590); 
     text-shadow: none; /* Sin sombra sobre fondo blanco */
 }
+
+/* --- Estilo para el Botón de Login --- */
+li.nav-login-btn-container {
+	position: relative;
+}
+
+a.btn-login {
+	background-color: var(--accent, #ffd700); /* Color dorado */
+	color: #333; /* Texto oscuro */
+	padding: 8px 18px;
+	border-radius: 20px; /* Bordes redondeados */
+	font-weight: 700;
+	letter-spacing: 1px; /* Sobrescribe el letter-spacing del menú */
+	text-shadow: none;
+	margin-left: 20px; /* Espacio para separarlo de "Contacto" */
+	transition: 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+a.btn-login:hover {
+	background-color: #fff;
+	color: var(--primary, #894590); /* Morado al pasar el ratón */
+	transform: scale(1.05);
+}
+
+/* Estilo del botón cuando el header es blanco (scroll) */
+header.abajo a.btn-login {
+	background-color: var(--primary, #894590); /* Color morado */
+	color: #fff; /* Texto blanco */
+}
+
+/* Efecto al pasar el mouse (scroll) */
+header.abajo a.btn-login:hover {
+	background-color: var(--accent, #ffd700);
+	color: #333;
+}

@@ -11,7 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     /* Color de fondo rosado claro de la imagen */
     background-color: #ffebee;
-    background-image: url('Principal.jpg');
+    background-image: url('../img/casavegas-carrucel/Principal.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
